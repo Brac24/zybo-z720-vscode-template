@@ -1,0 +1,9 @@
+*.jou
+*.log
+*.bda
+
+hardware/builds
+hardware/gpio_ctrl/
+
+
+
