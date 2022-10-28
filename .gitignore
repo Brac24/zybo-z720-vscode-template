@@ -11,8 +11,8 @@ hardware/gpio_ctrl/
 # This is the main project directory that will get created with the init script
 software/test-app/*      
 !software/test-app/src/
-#software/*
-#!software/tst-app
+software/*
+!software/test-app
 #software/
 
 
