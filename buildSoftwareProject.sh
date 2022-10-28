@@ -1,7 +1,7 @@
 # build the software by setting the environment variables required by the make file
 # then run make to create and build the project
 # Set environment variables 
-export WORKSPACE=$(pwd)
+export WORKSPACE="$(pwd)/software"
 echo "WORKSPACE set to : $WORKSPACE"
 files=($(pwd)/hardware/export/*.xsa) # We need the outer parenthesis here to grab the file
 filepath=${files[0]} # get the first xsa file found
