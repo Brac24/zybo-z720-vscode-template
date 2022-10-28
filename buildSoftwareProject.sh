@@ -14,6 +14,7 @@ export plat_name=${filenameNoExtension}
 export XSA=${filepath}
 export domain_name_apu=standalone_ps7_cortexa9_0
 export app_name_apu="$1"
+export app_name_rpu="$1"
 echo "app_name_apu set to ${app_name_apu}"
 
 # Make sure user passes in an app name or else just exit and do not run make command
