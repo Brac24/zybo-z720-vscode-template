@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: <https://go.microsoft.com/fwlink/?linkid=830387>
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "gdb",
+            "request": "attach",
+            "name": "Debug APU",
+            "preLaunchTask": "gdb APU init",
+            "gdbpath": "arm-none-eabi-gdb",
+            "target": "extended-remote localhost:3000",
+            "executable": "test-app/Debug/test-app.elf", // Change for specific project
+            "cwd": "${workspaceRoot}",
+            "autorun": [
+                "monitor ps",
+                "set confirm off",
+                "file test-app/Debug/test-app.elf" // Change for specific project
+            ]
+        },
+        {
+            "name": "Debug",
+            "type": "gdb",
+            "request": "launch",
+            "target": "./bin/executable",
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "parseText"
+        }    
+    ]
+}

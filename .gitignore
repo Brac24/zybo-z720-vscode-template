@@ -2,12 +2,17 @@
 *.log
 *.bda
 
+*.ld
+*.spec
+
 hardware/builds
 hardware/gpio_ctrl/
-#software/tst-app/*
-#!software/tst-app/src/
+
+# This is the main project directory that will get created with the init script
+software/test-app/*      
+!software/test-app/src/
 #software/*
 #!software/tst-app
-software/
+#software/
 
 
