@@ -25,7 +25,7 @@ if [ -z "$1" ]
     echo "Please pass in a application name. For example ./buildSoftwareProject my-app-name"
     exit 1
 else
-    #( cd ./software && make init )
+    ( cd ./software && make init )
 fi
 
 

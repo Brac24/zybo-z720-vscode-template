@@ -5,5 +5,4 @@ init:
 		app create -name $(app_name_apu) -platform $(plat_name) -domain $(domain_name_apu) -sysproj $(sys_name) -template {Hello World}; \
 		platform active $(plat_name); \
 		platform generate; \
-		app build $(app_name_apu); \
-		app build $(app_name_rpu)"
+		app build $(app_name_apu)"
