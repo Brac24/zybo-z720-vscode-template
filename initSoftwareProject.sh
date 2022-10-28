@@ -16,6 +16,7 @@ export domain_name_apu=standalone_ps7_cortexa9_0
 export app_name_apu="$1"
 export app_name_rpu="$1"
 export sys_name="${1}_system"
+export import_sources="$(pwd)/software/test-app-sources" # TODO change to be more flexible to a project
 echo "app_name_apu set to ${app_name_apu}"
 echo "system name is ${sys_name}"
 
