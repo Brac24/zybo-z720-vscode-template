@@ -15,7 +15,9 @@ export XSA=${filepath}
 export domain_name_apu=standalone_ps7_cortexa9_0
 export app_name_apu="$1"
 export app_name_rpu="$1"
+export sys_name="${1}_system"
 echo "app_name_apu set to ${app_name_apu}"
+echo "system name is ${sys_name}"
 
 # Make sure user passes in an app name or else just exit and do not run make command
 if [ -z "$1" ]
@@ -23,7 +25,7 @@ if [ -z "$1" ]
     echo "Please pass in a application name. For example ./buildSoftwareProject my-app-name"
     exit 1
 else
-    ( cd ./software && make init )
+    #( cd ./software && make init )
 fi
 
 

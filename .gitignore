@@ -4,6 +4,10 @@
 
 hardware/builds
 hardware/gpio_ctrl/
-
+#software/tst-app/*
+#!software/tst-app/src/
+#software/*
+#!software/tst-app
+software/
 
 
